@@ -19,7 +19,7 @@
   <script defer src="/src/js/main.js"></script>
 
   <!-- Icons Link -->
-  <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
@@ -33,14 +33,14 @@
       <h1 class="introduction-heading">We are launching <strong>soon!</strong></h1>
       <p class="introduction-text">Subscribe and get notified</p>
     </section>
-    <section class="form-subscription">
+    <div class="form-subscription">
       <form novalidate>
         <label class="sr-only" for="mail">Email address</label>
         <input type="email" required placeholder="Your email address..." name="email" id="mail" aria-errormessage="error-message" aria-invalid="false">
         <p aria-live="polite" class="error-message" id="error-message" hidden></p>
         <button type="submit" class="btn">Notify me</button>
       </form>
-    </section>
+    </div>
     <img src="./assets/images/illustration-dashboard.png" class="ping-illustration" width="1280" height="782" aria-hidden="true" alt=""/>
   </main>
   <footer>
