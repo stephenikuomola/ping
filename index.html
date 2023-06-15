@@ -2,33 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PING</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/css/style.css"/>
+
+  <!-- JavaScript -->
+  <script defer src="/src/js/main.js"></script>
+
+  <!-- Icons Link -->
+  <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+  <header>
+    <a href="#" class="site-link">
+      <img src="./assets/images/logo.svg" alt="Ping Logo"/>
+    </a>
+  </header>
+  <main>
+    <section class="introduction">
+      <h1 class="introduction-heading">We are launching <strong>soon!</strong></h1>
+      <p class="introduction-text">Subscribe and get notified</p>
+    </section>
+    <section class="form-subscription">
+      <form novalidate>
+        <label class="sr-only" for="mail">Email address</label>
+        <input type="email" required placeholder="Your email address..." name="email" id="mail" aria-errormessage="error-message" aria-invalid="false">
+        <p aria-live="polite" class="error-message" id="error-message" hidden></p>
+        <button type="submit" class="btn">Notify me</button>
+      </form>
+    </section>
+    <img src="./assets/images/illustration-dashboard.png" class="ping-illustration" width="1280" height="782" aria-hidden="true" alt=""/>
+  </main>
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <ul class="social-media-links">
+      <li>
+        <a href="#" aria-label="follow us on facebook">
+          <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="follow us on twitter">
+          <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="follow us on instagram">
+          <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
   </footer>
 </body>
 </html>
